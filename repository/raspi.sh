@@ -24,6 +24,8 @@ prompt_fn()
       '[1] Yes'                                          \
       '[2] No'
     read -p 'Your choices are (1 or 2): ' choice
+    clear
+  
     case "${choice}" in
         1)
               if ! sudo rpi-update; then
@@ -33,7 +35,6 @@ prompt_fn()
               ;;
         2)    return 0;;
         *)
-              clear
               printf "%s\n\n" 'Bad user input. The script will re-ask the question in 5 seconds.'
               sleep 5
               unset choice
