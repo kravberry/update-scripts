@@ -26,8 +26,8 @@ prompt_fn()
     read -p 'Your choices are (1 or 2): ' choice
     case "${choice}" in
         1)
-              if ! sudo raspi-update; then
-                printf "\n%s\n\n" "Failed to execute the command: sudo raspi-update. Line: ${LINENO}"
+              if ! sudo rpi-update; then
+                printf "\n%s\n\n" "Failed to execute the command: sudo rpi-update. Line: ${LINENO}"
                 exit 1
               fi
               ;;
