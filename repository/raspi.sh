@@ -46,12 +46,3 @@ prompt_fn
 clear
 
 printf "%s\n\n" 'The script has completed successfully!'
-
-
-
-
-
-
-
-
-    
